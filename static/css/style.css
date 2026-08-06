@@ -1,0 +1,296 @@
+/* =====================================
+   LILYLIST - STARGAZER FLOWER THEME
+===================================== */
+
+:root{
+    --pink:#C97D9A;
+    --green:#5E6623;
+    --gold:#E6C46A;
+    --cream:#F8F5F2;
+}
+
+body{
+    background:var(--cream);
+    font-family:'Segoe UI',sans-serif;
+    color:#444;
+}
+
+/* ================= HEADER ================= */
+
+.header-card{
+    background:linear-gradient(135deg,var(--pink),var(--gold));
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.header-card h1{
+    color:white;
+    font-weight:700;
+}
+
+.header-card p{
+    color:white;
+    opacity:.95;
+}
+
+.header-card .btn{
+    background:white;
+    color:var(--green);
+    font-weight:600;
+    border:none;
+    border-radius:40px;
+    padding:12px 28px;
+    transition:.3s;
+}
+
+.header-card .btn:hover{
+    background:var(--green);
+    color:white;
+}
+
+/* ================= CARDS ================= */
+
+.card{
+    border:none;
+    border-radius:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* ================= SUMMARY ================= */
+
+.summary-card{
+    transition:.3s;
+}
+
+.summary-card:hover{
+    transform:translateY(-6px);
+}
+
+.summary-card .card-body{
+    padding:30px;
+}
+
+.summary-card i{
+    color:var(--pink);
+    font-size:40px;
+}
+
+.summary-card h5{
+    margin-top:15px;
+    color:#666;
+}
+
+.summary-card h2{
+    color:var(--green);
+    font-size:42px;
+    font-weight:700;
+}
+
+/* ================= SEARCH ================= */
+
+.input-group{
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.input-group-text{
+    background:white;
+    border:none;
+}
+
+.form-control{
+    border:none;
+    box-shadow:none !important;
+}
+
+.btn-search{
+    background:var(--pink);
+    color:white;
+    border:none;
+}
+
+.btn-search:hover{
+    background:#b56f88;
+    color:white;
+}
+
+.btn-clear{
+    background:var(--green);
+    color:white;
+    border:none;
+}
+
+.btn-clear:hover{
+    background:#4a511d;
+    color:white;
+}
+
+/* ================= TASK TITLE ================= */
+
+.task-count{
+    background:var(--gold);
+    padding:8px 18px;
+    font-weight:600;
+}
+
+/* ================= TASK CARD ================= */
+
+.task-card{
+    transition:.3s;
+    border-radius:22px;
+    overflow:hidden;
+}
+
+.task-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+}
+
+.task-card .card-body{
+    padding:22px;
+}
+
+.task-card h5{
+    color:var(--green);
+    font-weight:700;
+}
+
+.task-card p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+.category-badge{
+    background:var(--gold);
+    color:#444;
+}
+
+/* ================= BADGES ================= */
+
+.badge{
+    border-radius:30px;
+    padding:7px 12px;
+    font-size:12px;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn-group{
+    display:flex;
+    gap:6px;
+}
+
+.btn-group .btn{
+    flex:1;
+    border-radius:12px !important;
+}
+
+.btn-warning{
+    background:var(--gold);
+    border:none;
+    color:#444;
+}
+
+.btn-warning:hover{
+    background:#d9b55a;
+    color:#444;
+}
+
+.btn-success{
+    background:var(--green);
+    border:none;
+}
+
+.btn-success:hover{
+    background:#4a511d;
+}
+
+.btn-danger{
+    background:var(--pink);
+    border:none;
+}
+
+.btn-danger:hover{
+    background:#b56f88;
+}
+
+/* ================= FOOTER ================= */
+
+.quote-card{
+    background:linear-gradient(135deg,#FFF4D9,#F9D9E7);
+    border-radius:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.quote-card h5{
+    color:var(--green);
+    font-weight:700;
+}
+
+/* ================= FORM ================= */
+
+.form-card{
+    background:white;
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.form-label{
+    font-weight:600;
+    color:var(--green);
+}
+
+.form-control,
+.form-select{
+    border-radius:12px;
+    border:1px solid #ddd;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:var(--pink);
+    box-shadow:0 0 0 .2rem rgba(201,125,154,.2);
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--pink);
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:var(--cream);
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .header-card{
+        text-align:center;
+    }
+
+    .header-card .btn{
+        width:100%;
+        margin-top:20px;
+    }
+
+    .task-count{
+        display:none;
+    }
+
+}
+
+/* Completed Task */
+
+.text-decoration-line-through{
+    text-decoration: line-through !important;
+    opacity: .65;
+}
